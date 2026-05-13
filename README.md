@@ -19,7 +19,7 @@ Experiments building Retrieval-Augmented Generation (RAG) pipelines using LlamaI
 | File | Description |
 |------|-------------|
 | `simple_chatbot.ipynb` | Basic LlamaIndex + Gemini chatbot |
-| `Copy_of_KeyonaiW_Build_and_Optimize_a_RAG_Pipeline_for_Document_Retrieval.ipynb` | Full RAG pipeline for document retrieval |
+| `Rag_pipeline.ipynb` | Full RAG pipeline for document retrieval |
 
 ## Setup
 
