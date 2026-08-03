@@ -1,17 +1,19 @@
 # RAG Chatbot Experiments
 
-Experiments building Retrieval-Augmented Generation (RAG) pipelines using LlamaIndex and Gemini. Covers both a simple question-answering chatbot and a full document retrieval pipeline that lets an AI pull relevant context from large document sets before responding.
+Experiments building Retrieval-Augmented Generation (RAG) pipelines using LlamaIndex, Gemini, and open source models. Covers a simple question-answering chatbot, a full document retrieval pipeline, and a RAG setup built entirely on open source models.
 
 ## What it does
 
 - **Simple chatbot** — basic Q&A using LlamaIndex + Gemini (no document retrieval)
 - **RAG pipeline** — full retrieval-augmented pipeline that ingests documents, indexes them, and retrieves relevant chunks to ground AI responses
+- **Open source RAG** — RAG pipeline built with open source models, no proprietary API required
 
 ## Stack
 
 - Python
 - [LlamaIndex](https://www.llamaindex.ai/)
 - Google Gemini API
+- Open source models (Hugging Face)
 - Jupyter Notebooks
 
 ## Files
@@ -20,6 +22,7 @@ Experiments building Retrieval-Augmented Generation (RAG) pipelines using LlamaI
 |------|-------------|
 | `simple_chatbot.ipynb` | Basic LlamaIndex + Gemini chatbot |
 | `Rag_pipeline.ipynb` | Full RAG pipeline for document retrieval |
+| `Keyonai_W_RAG_with_Open_Source_models.ipynb` | RAG pipeline using open source models |
 
 ## Setup
 
