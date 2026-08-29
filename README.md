@@ -1,54 +1,34 @@
-﻿# RAG Chatbot Experiments
+# RAG Chatbot Experiments
 
-Experiments building Retrieval-Augmented Generation (RAG) pipelines using LlamaIndex, Gemini, and open source models. Covers a simple question-answering chatbot, a full document retrieval pipeline, and a RAG setup built entirely on open source models.
+Playing around with Retrieval-Augmented Generation (RAG) using LlamaIndex. Three notebooks — a basic chatbot, a full RAG pipeline, and one built entirely on open source models.
 
-## What it does
+## Notebooks
 
-- **Simple chatbot** â€” basic Q&A using LlamaIndex + Gemini (no document retrieval)
-- **RAG pipeline** â€” full retrieval-augmented pipeline that ingests documents, indexes them, and retrieves relevant chunks to ground AI responses
-- **Open source RAG** â€” RAG pipeline built with open source models, no proprietary API required
-
-## Stack
-
-- Python
-- [LlamaIndex](https://www.llamaindex.ai/)
-- Google Gemini API
-- Open source models (Hugging Face)
-- Jupyter Notebooks
-
-## Files
-
-| File | Description |
+| File | What it does |
 |------|-------------|
-| `simple_chatbot.ipynb` | Basic LlamaIndex + Gemini chatbot |
-| `Rag_pipeline.ipynb` | Full RAG pipeline for document retrieval |
-| `Keyonai_W_RAG_with_Open_Source_models.ipynb` | RAG pipeline using open source models |
+| `simple_chatbot.ipynb` | Basic Q&A with LlamaIndex + Gemini |
+| `Rag_pipeline.ipynb` | Full RAG pipeline with document retrieval |
+| `Keyonai_W_RAG_with_Open_Source_models.ipynb` | Same thing but with open source models |
 
-## Setup
+## Run it
 
 ```bash
 pip install llama-index google-generativeai
 ```
 
-Set your Gemini API key before running:
+Add your Gemini API key:
 ```python
 import os
 os.environ["GOOGLE_API_KEY"] = "your-key-here"
 ```
 
-Then open either notebook in Jupyter and run all cells.
-
-## Key concepts
-
-- **RAG** â€” Instead of relying solely on an LLM's training data, RAG retrieves relevant documents at query time and injects them as context, reducing hallucinations and enabling domain-specific answers.
-- **LlamaIndex** â€” Handles document ingestion, chunking, embedding, and vector-based retrieval.
-
+Then open a notebook in Jupyter and run all cells.
 
 ## Docker
 
-`ash
+```bash
 docker build -t rag-chatbot-experiments .
 docker run -p 8888:8888 -e GOOGLE_API_KEY=your-key-here rag-chatbot-experiments
-`
+```
 
-Then open http://localhost:8888 in your browser.
+Open `http://localhost:8888` in your browser.
