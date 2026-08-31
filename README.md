@@ -23,12 +23,3 @@ os.environ["GOOGLE_API_KEY"] = "your-key-here"
 ```
 
 Then open a notebook in Jupyter and run all cells.
-
-## Docker
-
-```bash
-docker build -t rag-chatbot-experiments .
-docker run -p 8888:8888 -e GOOGLE_API_KEY=your-key-here rag-chatbot-experiments
-```
-
-Open `http://localhost:8888` in your browser.
